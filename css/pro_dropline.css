@@ -2,8 +2,8 @@
 
 .nav	{
 	background: #4f4f4f url(../images/shared/nav/pro_line_0.gif) repeat-x;
-	font-family:Tahoma;
-	font-size: 14px;
+	font-family:Arial;
+	font-size: 15px;
 	height: 29px;
 	position: relative;
 	margin: 0 auto;
@@ -75,7 +75,6 @@
 	display: none;
 	}
 
-/* IE6 only */
 .nav table	{
 	border-collapse: collapse;
 	font-size: 1em;
@@ -86,7 +85,7 @@
 .nav .sub	{
 	display: table;
 	list-style: none;
-	/* margin: 0 auto; */
+	
 	padding: 0;
 	}
 .nav .sub_active .current_sub a, 
@@ -103,7 +102,7 @@
 	padding: 0;
 	position: absolute;
 	text-align: left;
-	top: 29px;
+	top: 30px;
 	width: 750px;
 	z-index: 100;
 	}
