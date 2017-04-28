@@ -75,7 +75,7 @@ if (isset($_POST['login'])){
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>(Sistem Informasi Nilai Sekolah )</title>
+<title>(Sistem Informasi Nilai Sekolah) </title>
 <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" title="default" />
 <!--  jquery core -->
 <script src="js/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
@@ -95,21 +95,18 @@ if (isset($_POST['login'])){
  
 <!-- Start: login-holder -->
 <div id="login-holder">
-
 	<!-- start logo -->
 	<div id="logo-login">
 		<a href="index.html"><img src="images/login/logo.png" width="300" height="50" alt="" /></a>
 	</div>
-	<!-- end logo -->
-	
+
 	<div class="clear"></div>
 	
 	<!--  start loginbox ................................................................................. -->
 	<div id="loginbox">
-	
 	<!--  start login-inner -->
 	<div id="login-inner">
-    	<p align="center"><font face="verdana" size="2" color="#333333"><?php  if(isset($_GET['status'])){ echo "&laquo;".$_GET['status']."&raquo;"; }?></font></p>
+    	<p align="center"><font face="verdana" size="3" color="#333333"><?php  if(isset($_GET['status'])){ echo "&laquo;".$_GET['status']."&raquo;"; }?></font></p>
         <p>&nbsp;</p>
         <form action="index.php" method="post" name="postform">
 		<table border="0" cellpadding="0" cellspacing="0">
@@ -138,16 +135,12 @@ if (isset($_POST['login'])){
 		</table>
         </form>
 	</div>
-    
-    
-    
- 	<!--  end login-inner -->
+  
+
 	<div class="clear"></div>
  </div>
- <!--  end loginbox -->
 
 </div>
-<!-- End: login-holder -->
 </body>
 
 </html>
