@@ -1,2 +1,6 @@
 # TugasProgweb
-Sistem Informasi Nilai Sekolah
+DNI TECHNO
+Anggota Kelompok:
+Deden Nursyadid
+Novian Nuraldi
+Doni Riyanta
