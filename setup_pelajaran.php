@@ -1,6 +1,6 @@
 <?php
 
-include "conn.php";
+include "conn.php"; //untuk menkoneksikan kedatabase
 
 if(isset($_POST['submit'])){
 	
@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
 
 <!--  start page-heading -->
 <div id="page-heading">
-    <h1>Setup Pelajaran</h1>
+    <h1>Setup Pelajaran</h1> 
 </div>
 <!-- end page-heading -->
 
@@ -82,7 +82,7 @@ if(isset($_POST['submit'])){
                   <!-- start id-form -->
                   <table border="0" cellpadding="0" cellspacing="0"  id="id-form">
                     <tr>
-                      <th valign="top">Nama Mata Pelajaran </th>
+                      <th valign="top">Nama Mata Pelajaran </th> 
                       <td><input type="text" class="inp-form" name="nama_pelajaran"/></td>
                       <td></td>
                     </tr>
