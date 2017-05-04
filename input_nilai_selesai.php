@@ -42,11 +42,11 @@ include "conn.php";
             
 			<?php
 			}
-			error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+			error_reporting(E_ALL ^ (E_NOTICE | E_WARNING)); //untuk memberikan pesan peringatan!
 			if($_GET['status']=='0'){
 			?>
 
-            <div id="message-red">
+            <div id="message-red"> 
             <table border="0" width="100%" cellpadding="0" cellspacing="0">
             <tr>
                 <td class="red-left"><?php echo mysql_error();?></td>
@@ -58,8 +58,7 @@ include "conn.php";
 			<?php
 			}
 			?>
-
-
+	    
       	<!--  start product-table ..................................................................................... -->
         
         <!--  start step-holder -->
@@ -162,5 +161,7 @@ include "conn.php";
     <th class="sized bottomleft"></th>
     <td id="tbl-border-bottom">&nbsp;</td>
     <th class="sized bottomright"></th>
+
+
 </tr>
 </table>
