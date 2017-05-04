@@ -15,6 +15,28 @@ if(isset($_POST['submit'])){
 	}
 	
 }else{
+	unset($_POST['submit']);//untuk masuk login
+}
+
+
+?>
+<?php
+
+include "conn.php";
+
+if(isset($_POST['submit'])){
+	
+	$nama_kelas=strtoupper(htmlentities($_POST['nama_kelas']));
+	
+	$query=mysql_query("insert into setup_kelas values('','$nama_kelas')");
+	
+	if($query){
+		?><script language="javascript">document.location.href="?page=setup_kelas&status=1";</script><?php
+	}else{
+		?><script language="javascript">document.location.href="?page=setup_kelas&status=2";</script><?php
+	}
+	
+}else{
 	unset($_POST['submit']);
 }
 
@@ -117,6 +139,45 @@ if(isset($_POST['submit'])){
             <th width="16%" class="table-header-options line-left"><a href="">Aksi</a></th>
         </tr>
         
+        
+        <?php
+		$view=mysql_query("select * from setup_kelas order by nama_kelas asc");
+		
+		$no=0;
+		while($row=mysql_fetch_array($view)){
+		?>	
+		<tr>
+            <td><?php echo $no=$no+1;?></td>
+            <td><?php echo $row['nama_kelas'];?></td>
+            <td class="options-width">
+            <a href="" title="Delete" class="icon-2 info-tooltip"></a>
+            <a href="" title="Edit" class="icon-5 info-tooltip"></a>            
+            </td>
+        </tr>
+		<?php
+		}
+		?>
+        </table>
+        <!--  end product-table................................... --> 
+        </form>
+		
+        
+        
+	<div class="clear"></div>
+     
+    </div>
+    <!--  end content-table-inner ............................................END  -->
+    </td>
+    <td id="tbl-border-right"></td>
+</tr>
+<tr>
+    <th class="sized bottomleft"></th>
+    <td id="tbl-border-bottom">&nbsp;</td>
+    <th class="sized bottomright"></th>
+</tr>
+</table>
+
+
         
         <?php
 		$view=mysql_query("select * from setup_kelas order by nama_kelas asc");
